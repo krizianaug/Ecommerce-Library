@@ -8,6 +8,7 @@
     <title>Library</title>
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
 </head>
 
 <body>
@@ -23,8 +24,28 @@
                         <a href="#" class="nav__link">Contact</a>
                     </li>
                     <li>
-                        <a href="#" class="nav__link nav__link--primary">Books</a>
+                        <a href="#featured-books" class="nav__link nav__link--primary">Books</a>
                     </li>
+                </ul>
+
+                    <button class="btn__menu" onclick="openMenu()"> 
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="menu__backdrop">
+                        <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <ul class="menu__links">
+                            <li class="menu__list">
+                                <a href="#" class="menu__link">Home</a>
+                            </li>
+                            <li class="menu__list" >
+                                <a href="#" class="menu__link">Contact</a>
+                            </li>
+                            <li class="menu__list">
+                                <a href="#featured-books" class="menu__link ">Books</a>
+                            </li>
+                    </div>
 
                 </ul>
             </div>
@@ -37,10 +58,12 @@
                     <h2>
                         Find your dream book with <span class="violet"> Library</span>
                     </h2>
+                    <a href="#featured-books">
                     <button class="btn"> Browse books </button>
+                </a>
 
                 </div>
-                <figure>
+                <figure class="header__figure">
                     <img src="./assets/Undraw_Books.svg" alt="" class="header__img">
                 </figure>
             </div>
@@ -49,7 +72,7 @@
     </section>
 
     <main>
-        <section class="highlights">
+        <section id="highlights">
             <div class="container">
                 <div class="row">
                     <h2 class="section__title"> Why choose <span class="violet"> Library </span> </h2>
@@ -101,11 +124,11 @@
                     </h2>
 
                     <div class="books__wrapper">
-                        <div class="book__wrapper no-cursor">
-                            <figure class="book__img--wrapper">
+                        <div class="book__wrapper">
+                            <figure class="book__img--wrapper no-cursor">
                                 <img src="./assets/crack the coding interview.png" alt="" class="book__img">
                             </figure>
-                            <div class="book__title">
+                            <div class="book__title no-cursor">
                                 Crack the Coding Interview
                             </div>
                             <div class="book__ratings">
@@ -122,11 +145,11 @@
 
                         </div>
 
-                        <div class="book__wrapper no-cursor">
-                            <figure class="book__img--wrapper">
+                        <div class="book__wrapper">
+                            <figure class="book__img--wrapper no-cursor">
                                 <img src="./assets/atomic habits.jpg" alt="" class="book__img">
                             </figure>
-                            <div class="book__title">
+                            <div class="book__title no-cursor">
                                 Atomic Habits
                             </div>
                             <div class="book__ratings">
@@ -143,11 +166,11 @@
 
                         </div>
 
-                        <div class="book__wrapper no-cursor">
-                            <figure class="book__img--wrapper">
+                        <div class="book__wrapper">
+                            <figure class="book__img--wrapper no-cursor">
                                 <img src="./assets/david goggins.jpeg" alt="" class="book__img">
                             </figure>
-                            <div class="book__title">
+                            <div class="book__title no-cursor">
                                 Can't Hurt Me
                             </div>
                             <div class="book__ratings">
@@ -164,11 +187,11 @@
 
                         </div>
 
-                        <div class="book__wrapper no-cursor">
-                            <figure class="book__img--wrapper">
+                        <div class="book__wrapper">
+                            <figure class="book__img--wrapper no-cursor">
                                 <img src="./assets/deep work.jpeg" alt="" class="book__img">
                             </figure>
-                            <div class="book__title">
+                            <div class="book__title no-cursor">
                                 Crack the Coding Interview
                             </div>
                             <div class="book__ratings">
@@ -197,11 +220,11 @@
                     </h2>
 
                     <div class="books__wrapper">
-                        <div class="book__wrapper no-cursor">
-                            <figure class="book__img--wrapper">
+                        <div class="book__wrapper">
+                            <figure class="book__img--wrapper no-cursor">
                                 <img src="./assets/book-1.jpeg" alt="" class="book__img">
                             </figure>
-                            <div class="book__title">
+                            <div class="book__title no-cursor">
                                 The 10X Rule
                             </div>
                             <div class="book__ratings">
@@ -219,11 +242,11 @@
 
 
 
-                        <div class="book__wrapper no-cursor">
-                            <figure class="book__img--wrapper">
+                        <div class="book__wrapper">
+                            <figure class="book__img--wrapper no-cursor">
                                 <img src="./assets/book-2.jpeg" alt="" class="book__img">
                             </figure>
-                            <div class="book__title">
+                            <div class="book__title no-cursor">
                                 Be Obsessed Or Be Average
                             </div>
                             <div class="book__ratings">
@@ -239,11 +262,11 @@
                             </div>
                         </div>
 
-                        <div class="book__wrapper no-cursor">
-                            <figure class="book__img--wrapper">
+                        <div class="book__wrapper">
+                            <figure class="book__img--wrapper no-cursor">
                                 <img src="./assets/book-3.jpeg" alt="" class="book__img">
                             </figure>
-                            <div class="book__title">
+                            <div class="book__title no-cursor">
                                 Rich Dad Poor Dad
                             </div>
                             <div class="book__ratings">
@@ -259,11 +282,11 @@
                             </div>
                         </div>
 
-                        <div class="book__wrapper no-cursor">
-                            <figure class="book__img--wrapper">
+                        <div class="book__wrapper">
+                            <figure class="book__img--wrapper no-cursor">
                                 <img src="./assets/book-4.jpeg" alt="" class="book__img">
                             </figure>
-                            <div class="book__title">
+                            <div class="book__title no-cursor">
                                 Cashflow Quadrant
                             </div>
                             <div class="book__ratings">
@@ -279,11 +302,11 @@
                             </div>
                         </div>
 
-                        <div class="book__wrapper no-cursor">
-                            <figure class="book__img--wrapper">
+                        <div class="book__wrapper">
+                            <figure class="book__img--wrapper no-cursor">
                                 <img src="./assets/book-4.jpeg" alt="" class="book__img">
                             </figure>
-                            <div class="book__title">
+                            <div class="book__title no-cursor">
                                 48 Laws of Power
                             </div>
                             <div class="book__ratings">
@@ -299,11 +322,11 @@
                             </div>
                         </div>
 
-                        <div class="book__wrapper no-cursor">
-                            <figure class="book__img--wrapper">
+                        <div class="book__wrapper">
+                            <figure class="book__img--wrapper no-cursor">
                                 <img src="./assets/book-6.jpeg" alt="" class="book__img">
                             </figure>
-                            <div class="book__title">
+                            <div class="book__title no-cursor">
                                 The 5 Second Rule
                             </div>
                             <div class="book__ratings">
@@ -319,11 +342,11 @@
                             </div>
                         </div>
 
-                        <div class="book__wrapper no-cursor">
-                            <figure class="book__img--wrapper">
+                        <div class="book__wrapper">
+                            <figure class="book__img--wrapper no-cursor">
                                 <img src="./assets/book-7.jpg" alt="" class="book__img">
                             </figure>
-                            <div class="book__title">
+                            <div class="book__title no-cursor">
                                 Your Next Five Moves
                             </div>
                             <div class="book__ratings">
@@ -339,11 +362,11 @@
                             </div>
                         </div>
 
-                        <div class="book__wrapper no-cursor">
-                            <figure class="book__img--wrapper">
+                        <div class="book__wrapper">
+                            <figure class="book__img--wrapper no-cursor">
                                 <img src="./assets/book-8.jpeg" alt="" class="book__img">
                             </figure>
-                            <div class="book__title">
+                            <div class="book__title no-cursor">
                                 Mastery
                             </div>
                             <div class="book__ratings">
@@ -371,7 +394,9 @@
                     <h2 class="section__title">
                         Explore more <span class="violet">Books</span>
                     </h2>
+                    <a href="#featured-books">
                     <button class="btn">Browse books</button>
+                </a>
                 </div>
             </div>
         </section>
@@ -386,8 +411,8 @@
                 </a>
                 <div class="footer__links">
                     <a href="#" class="footer__link"> Home </a>
-                    <a class="footer__link no-cursor"> About </a>
-                    <a href="#" class="footer__link"> Books </a>
+                    <a class="footer__link  no-cursor"> About </a>
+                    <a href="#featured-books" class="footer__link"> Books </a>
                     <a class="footer__link  no-cursor"> Contact </a>
                 </div>
 
